@@ -1,15 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900,100,200);
+
+
 html {
 	margin: 0 0 0 0;
 }
 
 body{
-  font-size:14px;
+    font-family: 'Raleway', sans-serif;
+  font-size:16px;
   font-weight: 400;
   overflow-y:scroll;
   -webkit-font-smoothing: antialiased;
-}
-header {
-
 }
 ul {
     list-style:none;
@@ -23,11 +24,12 @@ a{
 	-ms-transition: all 0.2s ease-in;
 	-o-transition: all 0.2s ease-in;
 	transition: all 0.2s ease-in; 
-	border-bottom:1px solid #dedede;
 	    text-decoration: none;
 
 }
-
+/*
+Links
+*/
 a:link{
   text-decoration:none;
   color: #000;
@@ -54,53 +56,99 @@ a:focus {
 }
 
 
+ul.header-nav li, .social-button li{
+	display:inline;
+}
+/*
+Header Bar
+*/
+
 .header-margin {
   	width:100%;
-  	margin:0;
   	height:50px;
   	background:none;
 }
 
-
 .header-nav {
 	position:fixed;
+	text-align: left;
 	left: 0;
 	right: 0;
+}
 
-}
-ul.header-nav li, .social-button li {
-	display:inline;
-}
 
 ul.header-nav {
  	position:fixed;
-	margin-top: 15px;
-	margin-bottom: 100px;
+	margin-top: -15px;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom: 10px;
+
+
+
 	text-align: center;	
+      color: #19526f; 
+
 }
 
 .header-nav li {
-	padding-right:70px;
-	padding-left: 70px;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	   color: #19526f; 
+	padding-right:50px;
+
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+  text-transform:uppercase;
+  font-size:15px;
+  font-weight:800;
+
 }
 
 
-ul.header-nav a {
-	float:center;
-	font-size:17px;
-	border-bottom:0;
-	color:black;
-	border-bottom:0;
+.header-nav li a {
+  float:center;
+  border-bottom:0;
+  border-bottom:0;
+   color: #19526f; 
+
 }
 
+li.logo a {
+  text-transform:uppercase;
+  line-height:40px;
+  font-weight:800;
+  font-weight:800;
+  font-size:25px;
+  line-height: 3.0em;
+  width: 3.0em;
+/*  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;*/
+    background: none;
+    color: #19526f; 
+    border-radius: 100%; /* or 50% width & line-height */
+/*    border: 0.5px solid #000;
+*/          color: rgba(186, 0, 0, 0.75); 
+
+}
+/*
+HOVER LINK FOR HEADER BAR
+*/
+ul.header-nav a:hover {
+	  text-decoration:underline;
+
+}
 
 .content{
   position:relative;
   width:1140px;
   margin:50px auto;
 }
+/*
+NAME AND DESCRIPTION
+*/
 
 .text-container{
 	margin-left: auto;
@@ -110,42 +158,57 @@ ul.header-nav a {
   width: 100%;
   margin-top: 150px;
 }
-
+/*
+NAME FIRST AND LAST
+*/
 .name {
-	margin-top: 175px;
-	text-transform:uppercase;
-	color:#000000;
-	font-weight:900;
-  	color: #19526f; 
-   	font-size: 55px;
-  	letter-spacing: 10px; 
-  	text-align: center;
+  margin-top: 175px;
+  text-transform:uppercase;
+  color:#000000;
+  font-weight:900;
+    color: #19526f; 
+  font-size:43px;
+    text-align: center;
+    font-size:50px;
+}
+
+.name .frist, .name .last-name {
+  font-weight:900;
+  line-height:70px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
 
 }
 
 .name .first {
- font-size: 55px;
-  letter-spacing: 10px; 
   display: inline;
 }
 
 .name .last-name {
-	  	display: inline;
+      display: inline;
 
   color: rgba(186, 0, 0, 0.75); 
 }
 
+/*
+DESCRIPTION LINK
+*/
 .description {
 	top: 10%;
 }
 
 .description p {
- margin-top: -5px;
+ margin-top: 1px;
   letter-spacing: 2px;
-  font-size: 14px; 
+  font-size: 16px; 
+
 }
 
+.description p a {
+    border-bottom: 1px solid #f1f1f2;
 
+}
 .social-container  {
   margin-top: 20px; 
 }
@@ -154,14 +217,15 @@ ul.header-nav a {
 .social-button {
 	margin-top: 50px;
 	position: realtive;
-
 }
 
 .social-button li {
 	display:inline;
-	padding-right:20px;
-	padding-left: 20px;
-	padding-top: 20px;
+	padding-right:10px;
+	padding-left: 10px;
+	padding-top: 10px;
+  padding-bottom: 10px;
+
 
 }
 
@@ -176,6 +240,10 @@ position: relative;
   margin-right: 10px;
   margin-top: 10px; 
 }
+.social-button li a:hover {
+	opacity: 0.5;
+}
+
   
 .social-container:hover {
     background-color: rgba(255, 255, 255, 0.65);
@@ -183,13 +251,18 @@ position: relative;
 
 
 .social-button li a i {
-	top: 50%;
+  text-align: center;
+	font-size: 40px;
+  padding: 10px;
+  	background: none;
   	color: #19526f; 
-	font-size: 30px;
-	border-radius: 150%;
- 	border: 1x solid grey;
- 	padding:10px;
-
-
+  	border-radius: 100%; /* or 50% width & line-height */
+    border: 0.5px solid #000;
 }
+/*
+
+ABOUT ME 
+ */
+
+
 
