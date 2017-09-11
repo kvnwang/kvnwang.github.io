@@ -1,0 +1,195 @@
+html {
+	margin: 0 0 0 0;
+}
+
+body{
+  font-size:14px;
+  font-weight: 400;
+  overflow-y:scroll;
+  -webkit-font-smoothing: antialiased;
+}
+header {
+
+}
+ul {
+    list-style:none;
+    padding-left:0;
+}
+
+a{
+	text-decoration:none;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in; 
+	border-bottom:1px solid #dedede;
+	    text-decoration: none;
+
+}
+
+a:link{
+  text-decoration:none;
+  color: #000;
+  
+}
+
+a:visited{
+  text-decoration:none;
+  color: #000;
+}
+
+a:active{
+  text-decoration:none;
+  color: #000033;
+}
+
+a:focus {
+  outline:none;
+}
+
+
+.center {
+	text-align: center;
+}
+
+
+.header-margin {
+  	width:100%;
+  	margin:0;
+  	height:50px;
+  	background:none;
+}
+
+
+.header-nav {
+	position:fixed;
+	left: 0;
+	right: 0;
+
+}
+ul.header-nav li, .social-button li {
+	display:inline;
+}
+
+ul.header-nav {
+ 	position:fixed;
+	margin-top: 15px;
+	margin-bottom: 100px;
+	text-align: center;	
+}
+
+.header-nav li {
+	padding-right:70px;
+	padding-left: 70px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+
+ul.header-nav a {
+	float:center;
+	font-size:17px;
+	border-bottom:0;
+	color:black;
+	border-bottom:0;
+}
+
+
+.content{
+  position:relative;
+  width:1140px;
+  margin:50px auto;
+}
+
+.text-container{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50%;
+	margin-bottom: 0px;
+  width: 100%;
+  margin-top: 150px;
+}
+
+.name {
+	margin-top: 175px;
+	text-transform:uppercase;
+	color:#000000;
+	font-weight:900;
+  	color: #19526f; 
+   	font-size: 55px;
+  	letter-spacing: 10px; 
+  	text-align: center;
+
+}
+
+.name .first {
+ font-size: 55px;
+  letter-spacing: 10px; 
+  display: inline;
+}
+
+.name .last-name {
+	  	display: inline;
+
+  color: rgba(186, 0, 0, 0.75); 
+}
+
+.description {
+	top: 10%;
+}
+
+.description p {
+ margin-top: -5px;
+  letter-spacing: 2px;
+  font-size: 14px; 
+}
+
+
+.social-container  {
+  margin-top: 20px; 
+}
+
+
+.social-button {
+	margin-top: 50px;
+	position: realtive;
+
+}
+
+.social-button li {
+	display:inline;
+	padding-right:20px;
+	padding-left: 20px;
+	padding-top: 20px;
+
+}
+
+
+.social-button li a {
+position: relative;
+  display: inline ;
+  height: 100px;
+  width: 100px;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px; 
+}
+  
+.social-container:hover {
+    background-color: rgba(255, 255, 255, 0.65);
+}
+
+
+.social-button li a i {
+	top: 50%;
+  	color: #19526f; 
+	font-size: 30px;
+	border-radius: 150%;
+ 	border: 1x solid grey;
+ 	padding:10px;
+
+
+}
+
